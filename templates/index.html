@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Detection</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #f0f0f0;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        img {
+            width: 80%;
+            max-width: 600px;
+            border: 2px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Real-Time Emotion Detection</h1>
+    <img id="video" src="{{ url_for('video_feed') }}" alt="Video Feed">
+</body>
+</html>
